@@ -13,10 +13,17 @@ class Messaggio extends SistemaDiComunicazione {
 
     public function invio() {
         return 'messaggio inviato';
-    };
+    }
     public function risposta() {
         return 'messaggio di risposta';
-    };
+    }
+
+    public function getReadingNotification() {
+        return $this->notificaLettura;
+    }
+    public function getAnswerAcceptance() {
+        return $this->accettazioneRisposta;
+    }
 }
 
 ?>

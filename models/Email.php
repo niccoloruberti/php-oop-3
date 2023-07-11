@@ -12,13 +12,17 @@ class Email extends SistemaDiCOmunicazione {
 
     public function invio() {
         return 'email inviata';
-    };
+    }
     public function inoltra() {
         return 'email inoltrata';
-    };
+    }
     public function stampa() {
         return 'email stampata';
-    };
+    }
+
+    public function getNotification() {
+        return $this->notificaDiConsegna;
+    }
 }
 
 ?>

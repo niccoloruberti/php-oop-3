@@ -13,10 +13,17 @@ class NotificaPush extends SistemaDiComunicazione {
 
     public function invio() {
         return 'notifica inviata';
-    };
+    }
     public function click() {
         return 'apro il messaggio';
-    };
+    }
+
+    public function getVisibility() {
+        return $this->visibile;
+    }
+    public function getIcon() {
+        return $this->icona;
+    }
 }
 
 ?>
